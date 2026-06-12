@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RMA Returns Monitor — Download</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#f3f4f6; --card:#ffffff; --ink:#1b1b1f; --ink2:#56565c; --ink3:#8a8a91;
+      --line:#e4e4e8; --blue:#0f6cbd; --blue-d:#0a4f8a; --green:#107c41; --shadow:0 2px 4px rgba(0,0,0,.06),0 12px 32px rgba(0,0,0,.08);
+      --font:"Segoe UI",-apple-system,BlinkMacSystemFont,Aptos,Calibri,system-ui,sans-serif;
+    }
+    body{background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.5;
+      min-height:100vh;display:flex;flex-direction:column}
+    .topbar{background:#fff;border-bottom:1px solid var(--line);padding:14px 24px;display:flex;align-items:center;gap:12px}
+    .ms-logo{display:grid;grid-template-columns:repeat(2,11px);grid-template-rows:repeat(2,11px);gap:2px}
+    .ms-logo span{width:11px;height:11px}
+    .ms-logo .r{background:#f25022}.ms-logo .g{background:#7fba00}.ms-logo .b{background:#00a4ef}.ms-logo .y{background:#ffb900}
+    .topbar .who{font-size:13px;color:var(--ink2);font-weight:600}
+    main{flex:1;width:100%;max-width:880px;margin:0 auto;padding:48px 24px 64px}
+    .eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;
+      color:var(--blue);background:#e8f1fb;border:1px solid #cfe3f7;padding:5px 12px;border-radius:999px}
+    h1{font-size:34px;font-weight:700;letter-spacing:-.5px;margin:18px 0 8px}
+    .lede{font-size:17px;color:var(--ink2);max-width:620px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);
+      padding:26px;margin-top:28px}
+    .dl{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+    .dl .icon{width:54px;height:54px;border-radius:12px;background:linear-gradient(135deg,#0f6cbd,#0a4f8a);
+      display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0}
+    .dl .meta{flex:1;min-width:200px}
+    .dl .meta .name{font-size:17px;font-weight:700}
+    .dl .meta .sub{font-size:13.5px;color:var(--ink3);margin-top:2px}
+    .btn{display:inline-flex;align-items:center;gap:9px;background:var(--blue);color:#fff;text-decoration:none;
+      font-size:15px;font-weight:600;padding:13px 22px;border-radius:10px;transition:background .15s;white-space:nowrap}
+    .btn:hover{background:var(--blue-d)}
+    .btn svg{width:18px;height:18px;fill:currentColor}
+    .steps{margin-top:30px}
+    .steps h2{font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--ink2);margin-bottom:14px}
+    ol{list-style:none;counter-reset:s}
+    ol li{counter-increment:s;position:relative;padding:10px 0 10px 42px;border-bottom:1px solid var(--line);font-size:14.5px}
+    ol li:last-child{border-bottom:none}
+    ol li::before{content:counter(s);position:absolute;left:0;top:9px;width:26px;height:26px;border-radius:50%;
+      background:#e8f1fb;color:var(--blue);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+    ol li b{font-weight:700}
+    code{background:#f0f1f3;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-family:Consolas,monospace;font-size:13px}
+    .note{margin-top:26px;font-size:13px;color:var(--ink3);background:#fbfbfc;border:1px solid var(--line);
+      border-left:3px solid var(--blue);border-radius:8px;padding:14px 16px;line-height:1.55}
+    footer{border-top:1px solid var(--line);background:#fff;padding:20px 24px;font-size:12.5px;color:var(--ink3);text-align:center}
+    @media(max-width:520px){h1{font-size:27px}.dl .btn{width:100%;justify-content:center}}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="ms-logo"><span class="r"></span><span class="g"></span><span class="b"></span><span class="y"></span></div>
+    <div class="who">Microsoft · Solution delivery</div>
+  </div>
+  <main>
+    <span class="eyebrow">Customer download · AMETEK HKP</span>
+    <h1>RMA Returns Monitor</h1>
+    <p class="lede">The managed solution accelerator for the Returns Material Authorization (RMA) monitor, packaged for import into your Power Platform environment.</p>
+
+    <div class="card">
+      <div class="dl">
+        <div class="icon">📦</div>
+        <div class="meta">
+          <div class="name">RMAReturnsMonitor_managed.zip</div>
+          <div class="sub">Managed solution · 216 KB · for customer import</div>
+        </div>
+        <a class="btn" id="dlbtn" href="https://github.com/billwhalenmsft/rma-returns-monitor/releases/download/v1.0/RMAReturnsMonitor_managed.zip">
+          <svg viewBox="0 0 24 24"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg>
+          Download
+        </a>
+      </div>
+
+      <div class="steps">
+        <h2>Import in ~5 minutes</h2>
+        <ol>
+          <li>Download <b>RMAReturnsMonitor_managed.zip</b> using the button above.</li>
+          <li>Go to <code>make.powerapps.com</code> and select your target environment (top-right).</li>
+          <li>In the left nav choose <b>Solutions</b> → <b>Import solution</b>.</li>
+          <li>Browse to the downloaded <code>.zip</code>, then <b>Next</b> → <b>Import</b>.</li>
+          <li>When the import completes, open the solution to confirm its components loaded.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="note">
+      Provided as a managed solution for evaluation/import. If the download doesn't start or you need the
+      configuration (unmanaged) build, just reply to the email that linked you here and we'll sort it out.
+    </div>
+  </main>
+  <footer>Shared securely by Microsoft for AMETEK HKP · This page is unlisted and may be retired after download.</footer>
+  <script>
+    // Surface a friendly hint if the release asset isn't reachable yet.
+    document.getElementById('dlbtn').addEventListener('click', function(){
+      this.textContent = 'Starting…'; setTimeout(()=>{ this.innerHTML = '<svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"></path></svg> Download'; }, 2500);
+    });
+  </script>
+</body>
+</html>
